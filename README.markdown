@@ -1,3 +1,14 @@
+## Agile Ciudad Real Octopress
+
+This project allows you to re-generate the agile-cr page.
+
+Useful links:
+
+-  [Deploying with octopress in github]
+
+[Deploying with octopress in github]: http://octopress.org/docs/deploying/github/
+
+
 ## What is Octopress?
 
 Octopress is [Jekyll](https://github.com/mojombo/jekyll) blogging at its finest.
