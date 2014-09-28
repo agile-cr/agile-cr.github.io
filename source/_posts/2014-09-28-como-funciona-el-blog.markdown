@@ -66,6 +66,7 @@ Una vez editado, basta con comitear y pushear.
 
 Si tenemos todo preparado, bastará con:
 
+    rake generate
     rake deploy
 
 ## Más información
