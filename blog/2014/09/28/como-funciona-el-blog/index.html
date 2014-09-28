@@ -5,11 +5,11 @@
 <!--[if (gt IE 8)|(gt IEMobile 7)|!(IEMobile)|!(IE)]><!--><html class="no-js" lang="en"><!--<![endif]-->
 <head>
   <meta charset="utf-8">
-  <title>Calendario De Eventos - Agile Ciudad Real</title>
+  <title>Cómo Funciona El Blog - Agile Ciudad Real</title>
   <meta name="author" content="Agile Ciudad Real">
 
   
-  <meta name="description" content=" Calendario De Eventos Tweet Recent Posts Cómo Funciona El Blog GitHub Repos Status updating... @agile-cr on GitHub ">
+  <meta name="description" content="Pequeño manual para usar octopress">
   
 
   <!-- http://t.co/dKP3o1e -->
@@ -18,7 +18,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   
-  <link rel="canonical" href="http://agile-cr.github.io/events">
+  <link rel="canonical" href="http://agile-cr.github.io/blog/2014/09/28/como-funciona-el-blog">
   <link href="/favicon.png" rel="icon">
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css">
   <link href="/atom.xml" rel="alternate" title="Agile Ciudad Real" type="application/atom+xml">
@@ -80,28 +80,124 @@
   <div id="main">
     <div id="content">
       <div>
-<article role="article">
+<article class="hentry" role="article">
   
   <header>
-    <h1 class="entry-title">Calendario De Eventos</h1>
+    
+      <h1 class="entry-title">Cómo Funciona El Blog</h1>
+    
+    
+      <p class="meta">
+        
+
+
+
+
+<time class='entry-date' datetime='2014-09-28T12:20:44+02:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:20 pm</span></time>
+        
+           | <a href="#disqus_thread"
+             data-disqus-identifier="http://agile-cr.github.io">Comments</a>
+        
+      </p>
     
   </header>
-  
-  <iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;mode=AGENDA&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=homim5167nldjtoj8tlbp5qjck%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FMadrid" style=" border-width:0 " width="100%" height="200" frameborder="0" scrolling="no"></iframe>
 
 
+<div class="entry-content"><p>En este pequeño artículo se repasará lo básico sobre cómo funciona el blog.</p>
+
+<h2>Estructura básica</h2>
+
+<p>Hay dos ramas:</p>
+
+<h3>Rama Source</h3>
+
+<p>La rama <strong>source</strong> contiene los fuentes de la página. Cualquier cambio debe realizarse o mergearse contra esta rama. Más adelante hablaremos de cómo gestionarla.</p>
+
+<h3>Rama Master</h3>
+
+<p>Contiene los HTML ya compilados. Normalmente la descargaremos en el directorio <code>_deploy</code> y se gestionará automáticamente.</p>
+
+<h2>Preparación del entorno</h2>
+
+<p>Primero nos clonaremos el repositorio y nos situaremos en la rama <code>source</code>::</p>
+
+<pre><code>git clone git@github.com:agile-cr/agile-cr.github.io.git
+cd agile-cr.github.io
+git checkout -t origin/source
+</code></pre>
+
+<p>A continuación crearemos la carpeta <code>_deploy</code> con otro clon del mismo repositorio, pero en la rama <code>master</code>:</p>
+
+<pre><code>git clone git@github.com:agile-cr/agile-cr.github.io.git _deploy
+</code></pre>
+
+<p>Finalmente, nos descargamos todo lo que necesitamos. Tendremos que tener instalado <strong>ruby</strong>, <strong>gem</strong> y <strong>bundler</strong>:</p>
+
+<pre><code>bundle install --path vendor/bundle
+</code></pre>
+
+<h2>Realizando modificaciones</h2>
+
+<p>En la rama <code>source</code>, podemos editar cualquier página existente. También podemos crear contenido nuevo:</p>
+
+<h3>Posts</h3>
+
+<p>Se crea una plantilla nueva con::</p>
+
+<pre><code>rake new_post["Título del artículo nuevo a crear"]
+</code></pre>
+
+<p>Acordáos de añadir la propiedad <code>description</code> y <code>author</code>. Elegid las <code>categories</code> con cuidado, a ser posible coincidiendo con alguna ya existente.</p>
+
+<p>Una vez editado, basta con comitear y pushear.</p>
+
+<h3>Pages</h3>
+
+<p>Se crea una plantilla nueva con::</p>
+
+<pre><code>rake new_page[nombre_de_la_pagina]
+</code></pre>
+
+<p>Acordáos de añadir la propiedad <code>description</code> y quitar <code>date</code> y <code>comments</code>. Muy probablemente también queráis enlazarlo, modificando <code>source/_includes/custom/navigation.html</code>.</p>
+
+<p>Una vez editado, basta con comitear y pushear.</p>
+
+<h2>Publicar</h2>
+
+<p>Si tenemos todo preparado, bastará con:</p>
+
+<pre><code>bundle exec rake deploy
+</code></pre>
+</div>
 
 
-<iframe src="https://www.google.com/calendar/embed?showTitle=0&amp;height=600&amp;wkst=2&amp;bgcolor=%23FFFFFF&amp;src=homim5167nldjtoj8tlbp5qjck%40group.calendar.google.com&amp;color=%232F6309&amp;ctz=Europe%2FMadrid" style=" border-width:0 " width="800" height="600" frameborder="0" scrolling="no"></iframe>
-
-
-  
-    <footer>
+  <footer>
+    <p class="meta">
       
-      
-        <div class="sharing">
   
-  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://agile-cr.github.io/events/index.html" data-via="agile-cr" data-counturl="http://agile-cr.github.io/events/index.html" >Tweet</a>
+
+<span class="byline author vcard">Posted by <span class="fn">Agile Ciudad Real</span></span>
+
+      
+
+
+
+
+<time class='entry-date' datetime='2014-09-28T12:20:44+02:00'><span class='date'><span class='date-month'>Sep</span> <span class='date-day'>28</span><span class='date-suffix'>th</span>, <span class='date-year'>2014</span></span> <span class='time'>12:20 pm</span></time>
+      
+
+<span class="categories">
+  
+    <a class='category' href='/blog/categories/blog/'>blog</a>
+  
+</span>
+
+
+    </p>
+    
+      <div class="sharing">
+  
+  <a href="//twitter.com/share" class="twitter-share-button" data-url="http://agile-cr.github.io/blog/2014/09/28/como-funciona-el-blog/" data-via="agile-cr" data-counturl="http://agile-cr.github.io/blog/2014/09/28/como-funciona-el-blog/" >Tweet</a>
   
   
   <div class="g-plusone" data-size="medium"></div>
@@ -111,10 +207,19 @@
   
 </div>
 
+    
+    <p class="meta">
       
-    </footer>
-  
+      
+    </p>
+  </footer>
 </article>
+
+  <section>
+    <h1>Comments</h1>
+    <div id="disqus_thread" aria-live="polite"><noscript>Please enable JavaScript to view the <a href="http://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+</div>
+  </section>
 
 </div>
 
@@ -177,6 +282,22 @@
 
 </footer>
   
+
+<script type="text/javascript">
+      var disqus_shortname = 'agilecr';
+      
+        
+        // var disqus_developer = 1;
+        var disqus_identifier = 'http://agile-cr.github.io/blog/2014/09/28/como-funciona-el-blog/';
+        var disqus_url = 'http://agile-cr.github.io/blog/2014/09/28/como-funciona-el-blog/';
+        var disqus_script = 'embed.js';
+      
+    (function () {
+      var dsq = document.createElement('script'); dsq.type = 'text/javascript'; dsq.async = true;
+      dsq.src = '//' + disqus_shortname + '.disqus.com/' + disqus_script;
+      (document.getElementsByTagName('head')[0] || document.getElementsByTagName('body')[0]).appendChild(dsq);
+    }());
+</script>
 
 
 
