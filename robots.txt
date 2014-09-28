@@ -1,0 +1,4 @@
+User-agent: *
+Disallow: 
+
+Sitemap: http://agile-cr.github.io/agile-cr/sitemap.xml 

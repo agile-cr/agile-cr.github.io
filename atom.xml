@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+
+  <title><![CDATA[Agile Ciudad Real]]></title>
+  <link href="http://agile-cr.github.io/agile-cr/atom.xml" rel="self"/>
+  <link href="http://agile-cr.github.io/agile-cr/"/>
+  <updated>2014-09-27T21:10:21+02:00</updated>
+  <id>http://agile-cr.github.io/agile-cr/</id>
+  <author>
+    <name><![CDATA[Agile Ciudad Real]]></name>
+    <email><![CDATA[agile-cr@googlegroups.com]]></email>
+  </author>
+  <generator uri="http://octopress.org/">Octopress</generator>
+
+  
+</feed>
