@@ -66,4 +66,12 @@ Una vez editado, basta con comitear y pushear.
 
 Si tenemos todo preparado, bastará con:
 
-    bundle exec rake deploy
+    rake deploy
+
+## Más información
+
+Podéis encontrar más información sobre [cómo publicar en Octopress], o [el formato Markdown].
+
+
+[cómo publicar en Octopress]: http://octopress.org/docs/blogging/
+[el formato Markdown]: http://daringfireball.net/projects/markdown/syntax
