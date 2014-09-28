@@ -4,7 +4,7 @@
   <title><![CDATA[Agile Ciudad Real]]></title>
   <link href="http://agile-cr.github.io/atom.xml" rel="self"/>
   <link href="http://agile-cr.github.io/"/>
-  <updated>2014-09-28T12:36:14+02:00</updated>
+  <updated>2014-09-28T14:22:01+02:00</updated>
   <id>http://agile-cr.github.io/</id>
   <author>
     <name><![CDATA[Agile Ciudad Real]]></name>
@@ -81,8 +81,12 @@ git checkout -t origin/source
 
 <p>Si tenemos todo preparado, bastará con:</p>
 
-<pre><code>bundle exec rake deploy
+<pre><code>rake deploy
 </code></pre>
+
+<h2>Más información</h2>
+
+<p>Podéis encontrar más información sobre <a href="http://octopress.org/docs/blogging/">cómo publicar en Octopress</a>, o <a href="http://daringfireball.net/projects/markdown/syntax">el formato Markdown</a>.</p>
 ]]></content>
   </entry>
   
