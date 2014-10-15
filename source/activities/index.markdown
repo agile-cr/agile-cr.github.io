@@ -8,6 +8,8 @@ footer: true
 
 ## Próximas reuniones
 
+- 2014/10/22: Kata
+
 ## En reuniones anteriores
 
 - 2013/03/26: Cañas ágiles
