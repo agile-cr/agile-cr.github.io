@@ -1,3 +1,9 @@
+Maybe you are trying to get [the Agile Ciudad Real web page]
+Quizá estés buscando [la web de Agile Ciudad Real]
+
+[the Agile Ciudad Real web page]: http://agile-cr.github.io/
+[la web de Agile Ciudad Real]: http://agile-cr.github.io/
+
 ## Agile Ciudad Real Octopress
 
 This project allows you to re-generate the agile-cr page.
