@@ -8,7 +8,7 @@ footer: true
 
 ## Próximas reuniones
 
-- 2014/10/22: Kata
+- 2015/04/27: Por decidir
 
 ## En reuniones anteriores
 
@@ -28,6 +28,12 @@ footer: true
 - 2014/03/10: Reunión informal, hablando de AngularJS.
 - 2014/05/20: Demo de las Oculus de Google
 - 2014/07/22: Cañas ágiles
+- 2014/11/19: Charla informal entre todos
+- 2014/12/10: Charlas:
+  - [Zsh]
+  - [python-inquirer], por [Miguel Ángel García]
+- 2015/02/19: Introducción a Django, por [Miguel Ángel García]
+- 2015/04/30: Cañas ágiles
 
 
 ## Temas para las próximas reuniones
@@ -62,5 +68,4 @@ Neo4J - Base de datos de grafos	 |  Francisco Fernández
 [David Villa]: http://arco.esi.uclm.es/~david.villa/index.html
 [Miguel Ángel García]: http://magmax.org/
 ["String calculator"]: http://www.solveet.com/exercises/Kata-String-Calculator/8
-
-
+[Zsh]: http://www.zsh.org/
