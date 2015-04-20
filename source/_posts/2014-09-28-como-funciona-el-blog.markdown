@@ -4,7 +4,7 @@ title: "Cómo funciona el blog"
 description: "Pequeño manual para usar octopress"
 date: 2014-09-28 12:20:44 +0200
 comments: true
-categories: 
+categories:
 - blog
 ---
 
@@ -46,7 +46,7 @@ En la rama `source`, podemos editar cualquier página existente. También podemo
 
 Se crea una plantilla nueva con::
 
-    rake new_post["Título del artículo nuevo a crear"]
+    bundle exec rake new_post["Título del artículo nuevo a crear"]
 
 Acordáos de añadir la propiedad `description` y `author`. Elegid las `categories` con cuidado, a ser posible coincidiendo con alguna ya existente.
 
@@ -56,7 +56,7 @@ Una vez editado, basta con comitear y pushear.
 
 Se crea una plantilla nueva con::
 
-    rake new_page[nombre_de_la_pagina]
+    bundle exec rake new_page[nombre_de_la_pagina]
 
 Acordáos de añadir la propiedad `description` y quitar `date` y `comments`. Muy probablemente también queráis enlazarlo, modificando `source/_includes/custom/navigation.html`.
 
@@ -66,8 +66,8 @@ Una vez editado, basta con comitear y pushear.
 
 Si tenemos todo preparado, bastará con:
 
-    rake generate
-    rake deploy
+    bundle exec rake generate
+    bundle exec rake deploy
 
 ## Más información
 
