@@ -4,7 +4,7 @@
   <title><![CDATA[Agile Ciudad Real]]></title>
   <link href="http://agile-cr.github.io/atom.xml" rel="self"/>
   <link href="http://agile-cr.github.io/"/>
-  <updated>2014-10-15T20:50:33+02:00</updated>
+  <updated>2015-04-20T08:50:26+02:00</updated>
   <id>http://agile-cr.github.io/</id>
   <author>
     <name><![CDATA[Agile Ciudad Real]]></name>
@@ -59,7 +59,7 @@ git checkout -t origin/source
 
 <p>Se crea una plantilla nueva con::</p>
 
-<pre><code>rake new_post["Título del artículo nuevo a crear"]
+<pre><code>bundle exec rake new_post["Título del artículo nuevo a crear"]
 </code></pre>
 
 <p>Acordáos de añadir la propiedad <code>description</code> y <code>author</code>. Elegid las <code>categories</code> con cuidado, a ser posible coincidiendo con alguna ya existente.</p>
@@ -70,7 +70,7 @@ git checkout -t origin/source
 
 <p>Se crea una plantilla nueva con::</p>
 
-<pre><code>rake new_page[nombre_de_la_pagina]
+<pre><code>bundle exec rake new_page[nombre_de_la_pagina]
 </code></pre>
 
 <p>Acordáos de añadir la propiedad <code>description</code> y quitar <code>date</code> y <code>comments</code>. Muy probablemente también queráis enlazarlo, modificando <code>source/_includes/custom/navigation.html</code>.</p>
@@ -81,8 +81,8 @@ git checkout -t origin/source
 
 <p>Si tenemos todo preparado, bastará con:</p>
 
-<pre><code>rake generate
-rake deploy
+<pre><code>bundle exec rake generate
+bundle exec rake deploy
 </code></pre>
 
 <h2>Más información</h2>
