@@ -8,10 +8,11 @@ footer: true
 
 ## Próximas reuniones
 
-- 2015/04/27: Por decidir
+- 2015/05/13: Taller de scrapping y web-bots (Bizneo)
 
 ## En reuniones anteriores
 
+- 2015/04/27: Visión por computador y realidad aumentada
 - 2013/03/26: Cañas ágiles
 - 2013/06/26: Charlas
   - "Emacs pills", por [David Villa]
@@ -55,7 +56,8 @@ Programando en la nube: Heroku	 |  Miguel Ángel (MagMax)
 Python Tornado como servidor web.	 |  Miguel Ángel (MagMax)
 MongoDB	 |  Miguel Ángel (MagMax)
 Redis	Francisco Fernández,  |  Miguel Ángel (MagMax)
-Python: prego y doublex.	|  David Villa
+Dobles de prueba en Python con doublex	|  David Villa
+Pruebas de sistema con prego |  David Villa
 Web scraping	|  David Pérez
 Testing web con Ruby (“integración continua”, BDD, Pruebas de aceptación...)	|  David Pérez
 Herramientas Mozilla menos conocidas	|  David Pérez
